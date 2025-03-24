@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "ES2015", // Change this to ES2015 or later
+      "module": "ES2015", // Change this to ES2015 or later
+      "strict": true,
+      "outDir": "./js",
+      "lib": ["ES2015", "DOM"] // Add this line to include the ES2015 library
+    },
+    "include": ["src/**/*.ts"]
+  }

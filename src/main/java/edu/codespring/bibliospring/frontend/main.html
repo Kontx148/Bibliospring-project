@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>My Book List</title>
+</head>
+
+<body>
+    <nav>
+        <h3>My Book List</h3>
+        <img src="book.png" alt="logo" />
+    </nav>
+    <main>
+        <p>Enter a Book's details and press the button to add it to the list</p>
+
+        <!-- Input fields for book details -->
+        <div>
+            <label for="title-input">Title:</label>
+            <input id="title-input" type="text" placeholder="Enter book title" />
+        </div>
+        <div>
+            <label for="isbn-input">ISBN:</label>
+            <input id="isbn-input" type="text" placeholder="Enter ISBN" />
+        </div>
+        <div>
+            <label for="author-input">Author:</label>
+            <input id="author-input" type="text" placeholder="Enter author name" />
+        </div>
+
+        <!-- Add button -->
+        <button id="add-button" class="pretty-button">Add to list</button>
+
+        <!-- Search/Filter section -->
+        <h3>Search/Filter Books</h3>
+        <div>
+            <label for="search-by">Search by:</label>
+            <select id="search-by">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+            <input id="search-value" type="text" placeholder="Enter title or author" />
+            <button id="search-button" class="pretty-button">Search</button>
+            <button id="clear-search-button" class="pretty-button">Clear</button>
+        </div>
+
+        <!-- Delete section -->
+        <h3>Delete a Book</h3>
+        <div>
+            <label for="delete-criteria">Delete by:</label>
+            <select id="delete-criteria">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+            <input id="delete-value" type="text" placeholder="Enter title or author" />
+            <button id="delete-button" class="pretty-button">Delete</button>
+        </div>
+
+        <!-- List of books -->
+        <ul id="todo-list"></ul>
+    </main>
+    <footer>
+        <p>Web app by Veres</p>
+    </footer>
+
+    <script src="js/biblio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #e5dada;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+.pretty-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pretty-button:hover {
+    background-color: #45a049;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-item .title {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.book-item .author {
+    color: #e74c3c;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
